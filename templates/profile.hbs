@@ -1,0 +1,14 @@
+<ul class="unstyled">
+  <li>
+    <img src="{{profile.picture.data.url}}" class="img-polaroid" />
+    <a href="{{profile.link}}" target="_blank">{{profile.name}}</a>
+  </li>
+  <li>{{profile.bio}}</li>
+  <li>Inspired by:
+    <ul>
+      {{#each profile.inspirational_people}}
+      <li>{{name}}</li>
+      {{/each}}
+    </ul>
+  </li>
+</ul>

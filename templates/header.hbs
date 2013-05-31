@@ -1,0 +1,20 @@
+<div class="navbar navbar-static-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="{{linkTo "index"}}">Silly bootstrap app ;( [{{cid}}]</a>
+      <ul class="nav">
+        <li><a href="{{linkTo "profile"}}" data-name="main#profile">Profile</a></li>
+        <li><a href="#">Friends</a></li>
+      </ul>
+      <ul class="nav pull-right">
+        <li>
+          {{#ifLoggedIn}}
+          <a href="{{linkTo "login"}}" data-name="oauth#login">Logout</a>
+        {{else}}
+          <a href="{{linkTo "login"}}" data-name="oauth#login">Login</a>
+        {{/ifLoggedIn}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
