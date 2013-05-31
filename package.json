@@ -1,0 +1,23 @@
+{
+  "name": "samplegrunt",
+  "version": "0.0.1",
+  "description": "Playing fool with Grunt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "Yehor V. Nazarkin",
+  "license": "BSD",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-coffee": "~0.6.4",
+    "grunt-contrib-handlebars": "~0.5.8",
+    "grunt-contrib-requirejs": "~0.4.0",
+    "grunt-contrib-less": "~0.5.0",
+    "grunt-contrib-watch": "~0.3.1",
+    "grunt-contrib-jshint": "~0.3.0"
+  }
+}
