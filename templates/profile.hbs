@@ -1,9 +1,11 @@
+<div class="row">
+  <div class="span1"><img src="{{profile.picture.data.url}}" class="img-polaroid" /></div>
+  <div class="span10 user-title">
+    <div class="row"><a href="{{profile.link}}" target="_blank">{{profile.name}}</a><br/></div>
+    <div class="row">{{profile.bio}}</div>
+  </div>
+</div>
 <ul class="unstyled">
-  <li>
-    <img src="{{profile.picture.data.url}}" class="img-polaroid" />
-    <a href="{{profile.link}}" target="_blank">{{profile.name}}</a>
-  </li>
-  <li>{{profile.bio}}</li>
   <li>Inspired by:
     <ul>
       {{#each profile.inspirational_people}}

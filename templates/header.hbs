@@ -9,7 +9,7 @@
       <ul class="nav pull-right">
         <li>
           {{#ifLoggedIn}}
-          <a href="{{linkTo "login"}}" data-name="oauth#login">Logout</a>
+          <a href="{{linkTo "logout"}}" data-name="oauth#login">Logout</a>
         {{else}}
           <a href="{{linkTo "login"}}" data-name="oauth#login">Login</a>
         {{/ifLoggedIn}}
