@@ -2,11 +2,12 @@ define [
   'chaplin'
   'models/profile'
 ], (chaplin, Profile) ->
+
   class Friend extends chaplin.Profile
-    urlRoot: 'https://graph.facebook.com/'
+    urlRoot: chaplin.mediator.baseURL
 
   class Friends extends chaplin.Collection
-    url: 'https://graph.facebook.com/me/friends'
+    url: "#{chaplin.mediator.baseURL}/me/friends"
 
     parse: (response) ->
       @paging = response.paging

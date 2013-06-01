@@ -1,9 +1,9 @@
 define ['chaplin', 'lostorage'], (chaplin, lostorage) ->
 
   class OAuthModel extends chaplin.Model
-    urlRoot: "https://graph.facebook.com/debug_token"
+    urlRoot:  "#{chaplin.mediator.baseURL}/debug_token"
     urlAuthorize: 'https://www.facebook.com/dialog/oauth'
-    urlExchange: 'https://graph.facebook.com/oauth/access_token'
+    urlExchange: "#{chaplin.mediator.baseURL}/oauth/access_token"
 
     defaults:
       client_id: '145596468960818'

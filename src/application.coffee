@@ -29,6 +29,6 @@ define [
           ajaxOptions.url = ajaxOptions.url + connector + token_arg
 
     initMediator: ->
-      chaplin.mediator.oauth = new OAuthModel
       chaplin.mediator.baseURL = "https://graph.facebook.com"
+      chaplin.mediator.oauth = new OAuthModel
       chaplin.mediator.seal()
